@@ -5,9 +5,9 @@ UnbufferedSerial ser(D5, D4, 9600);
 
 int main()
 {
-    int byte = 1;
+    char a = '1';
     while (true) {
-        ser.write(&byte,sizeof(byte));
+        ser.write(&a, sizeof(a));
         wait_us(1000*1000);
     }
 }
